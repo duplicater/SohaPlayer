@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NativeControlsView">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="203"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0h0-oc-PVz">
+                    <color key="tintColor" red="1" green="0.27395845769999999" blue="0.38306517800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="timeScrubberChange:" destination="iN0-l3-epB" eventType="valueChanged" id="lh3-IK-BnC"/>
+                    </connections>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGT-NF-j2K">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="TUs-b8-fkf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Play">
+                        <color key="titleColor" red="1" green="0.27395845769999999" blue="0.38306517800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </state>
+                    <connections>
+                        <action selector="play:" destination="iN0-l3-epB" eventType="touchUpInside" id="kYE-ol-Ue8"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68n-7E-SBb" userLabel="toggfull btn">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="kVm-Qc-8n8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="full">
+                        <color key="titleColor" red="1" green="0.27395845769999999" blue="0.38306517800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="line">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="toggfulSCBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="ATX-6f-6zK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0h0-oc-PVz" secondAttribute="bottom" constant="8" id="6nY-AO-rJG"/>
+                <constraint firstItem="rGT-NF-j2K" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="QzK-9q-6L1"/>
+                <constraint firstAttribute="bottom" secondItem="rGT-NF-j2K" secondAttribute="bottom" constant="8" id="UyI-32-ffD"/>
+                <constraint firstItem="0h0-oc-PVz" firstAttribute="leading" secondItem="rGT-NF-j2K" secondAttribute="trailing" constant="8" id="isO-zl-hDo"/>
+                <constraint firstAttribute="bottom" secondItem="68n-7E-SBb" secondAttribute="bottom" constant="8" id="l73-tx-CE8"/>
+                <constraint firstAttribute="trailing" secondItem="68n-7E-SBb" secondAttribute="trailing" constant="8" id="nyk-h3-xPh"/>
+                <constraint firstAttribute="trailing" secondItem="0h0-oc-PVz" secondAttribute="trailing" constant="60" id="q4p-HC-lXH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="playBtn" destination="rGT-NF-j2K" id="sJs-ZB-MVS"/>
+                <outlet property="progressSlider" destination="0h0-oc-PVz" id="YJN-aZ-2jn"/>
+                <outlet property="toggfullSCBtn" destination="68n-7E-SBb" id="ADH-b1-otc"/>
+            </connections>
+            <point key="canvasLocation" x="685" y="316.5"/>
+        </view>
+    </objects>
+</document>

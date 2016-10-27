@@ -1,27 +1,92 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="b4b-u3-NdQ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <!--nativeFs-->
+        <scene sceneID="vME-Sx-nM3">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="SohaPlayerViewController" sceneMemberID="viewController">
+                <viewController id="3uH-7A-EdX" customClass="NativeComponentsFs" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                        <viewControllerLayoutGuide type="top" id="fu7-hr-zOs"/>
+                        <viewControllerLayoutGuide type="bottom" id="aeV-2R-F9a"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="hdl-dA-wS2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="nativeFs" id="13Y-Fw-KTK"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAC-KL-Zlr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="569" y="279"/>
+        </scene>
+        <!--native-->
+        <scene sceneID="IuW-Kp-bLm">
+            <objects>
+                <viewController id="Q9A-k1-ngk" customClass="NativeComponents" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Dn-7C-NcQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="THW-sv-7VG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OcZ-04-fT4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mza-xF-WNm" userLabel="Player Container">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPV-jW-pHY" customClass="NativeControlsView">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2Ii-4H-eKE"/>
+                                    <constraint firstItem="WPV-jW-pHY" firstAttribute="leading" secondItem="Mza-xF-WNm" secondAttribute="leading" id="BR0-qw-lL7"/>
+                                    <constraint firstItem="WPV-jW-pHY" firstAttribute="top" secondItem="Mza-xF-WNm" secondAttribute="top" id="Jm4-se-kWD"/>
+                                    <constraint firstAttribute="trailing" secondItem="WPV-jW-pHY" secondAttribute="trailing" id="SWn-10-Wtx"/>
+                                    <constraint firstAttribute="bottom" secondItem="WPV-jW-pHY" secondAttribute="bottom" id="v7Z-tm-PO3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mza-xF-WNm" firstAttribute="width" secondItem="OcZ-04-fT4" secondAttribute="width" id="Xgh-OD-MrB"/>
+                            <constraint firstItem="Mza-xF-WNm" firstAttribute="centerY" secondItem="OcZ-04-fT4" secondAttribute="centerY" id="h2H-vm-wsu"/>
+                            <constraint firstItem="Mza-xF-WNm" firstAttribute="centerX" secondItem="OcZ-04-fT4" secondAttribute="centerX" id="hX2-6w-1Xt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="native" id="WKT-LY-2aY"/>
+                    <connections>
+                        <outlet property="nativeControls" destination="WPV-jW-pHY" id="dud-ci-cBl"/>
+                        <outlet property="playerContainer" destination="Mza-xF-WNm" id="R01-iL-uYe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3h-OM-nUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="-376"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vuw-yE-AU9">
+            <objects>
+                <tabBarController id="b4b-u3-NdQ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="38m-qe-Yr2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Q9A-k1-ngk" kind="relationship" relationship="viewControllers" id="dEv-d9-PNJ"/>
+                        <segue destination="3uH-7A-EdX" kind="relationship" relationship="viewControllers" id="SGQ-Ix-NLD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QBN-BA-xbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-385" y="-48"/>
         </scene>
     </scenes>
 </document>

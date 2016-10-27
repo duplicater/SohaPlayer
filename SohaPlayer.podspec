@@ -1,42 +1,20 @@
-#
-# Be sure to run `pod lib lint SohaPlayer.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'SohaPlayer'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SohaPlayer.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/SohaPlayer'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.name                = 'SohaPlayer'
+  s.version             = '1.0.1'
+  s.summary             = 'The SohaPlayerSDK iOS SDK, play video into your iOS application.'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jackylmao' => 'cuongleviet@vccorp.vn' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/SohaPlayer.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'SohaPlayer/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SohaPlayer' => ['SohaPlayer/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.homepage            = 'http => "https://github.com/duplicater/SohaPlayer'
+  s.description         = 'The SohaPlayerSDK iOS SDK, for  play video into your iOS application. The SDK supports iOS7, iOS 8, iOS 9 and iOS 10'
+  s.frameworks          = ["SystemConfiguration", "QuartzCore", "CoreMedia", "AVFoundation", "AudioToolbox", "AdSupport", "ImageIO", "WebKit", "Social", "MediaAccessibility"]
+  s.library             = "z", "System", "stdc++", "stdc++.6", "stdc++.6.0.9", "xml2", "xml2.2", "c++"
+  s.requires_arc        = true
+  s.source              = { :http => "https://github.com/duplicater/SohaPlayer/releases/download/#{s.version}/SohaPlayer.framework.zip" }
+  s.platform            = :ios, '8.0'
+  s.preserve_paths      = 'SohaPlayer.framework'
+  s.public_header_files = 'SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h'
+  s.source_files        = 'SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h'
+  s.resource            = 'SohaPlayer.bundle'
+  s.vendored_frameworks = 'SohaPlayer.framework'
+ # s.dependency 'AFNetworking', '~> 3.0'
 end
