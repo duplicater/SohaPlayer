@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SohaPlayer_Example' do
+  pod 'SohaPlayer', :path => '../'
+
+  target 'SohaPlayer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
