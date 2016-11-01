@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name                = 'SohaPlayer'
   s.version             = '1.0.4'
   s.summary             = 'The SohaPlayerSDK iOS SDK, play video into your iOS application.'
-  s.license          = 'MIT'
+  s.license          = { :type => "Apache 2.0", :file => "LICENSE" }
   s.author           = { 'Jackylmao' => 'cuongleviet@vccorp.vn' }
   s.homepage            = "https://devuser.sohatv.vn"
   s.description         = 'The SohaPlayerSDK iOS SDK, for  play video into your iOS application. The SDK supports iOS7, iOS 8, iOS 9 and iOS 10'
