@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, SHMediaPlaybackState) {
     SHMediaPlaybackStatePaused,
     /* Playback is currently ended. */
     SHMediaPlaybackStateEnded,
-
+    ///@todo
     /* Playback is temporarily interrupted, perhaps because the buffer ran out of content. */
     SHMediaPlaybackStateInterrupted,
     /* The movie player is currently seeking towards the end of the movie. */
@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, SHMediaPlaybackState) {
     SHMediaPlaybackStateSeekingBackward
 };
 
-
+///@todo
 typedef NS_OPTIONS(NSUInteger, SHMediaLoadState) {
     /* The load state is not known. */
     SHMediaLoadStateUnknown        = 0,

@@ -17,7 +17,9 @@ static NSString *SHPlayerConfigNativeAdIdKey = @"nativeAdId";
 @protocol SHPlayerConfigDelegate <NSObject>
 
 @required
-- (void)sourceUrlReadyPlay:(NSString*)source;
+- (void)sourceUrlReadyPlay;
+
+- (void)linkPlayError:(NSError*)error;
 
 @end
 
@@ -73,10 +75,21 @@ DEPRECATED_MSG_ATTRIBUTE("Use initWithServer:uiConfID:partnerId:");
 
 @property (nonatomic) float cacheSize;
 
+//lecuong add.
+@property (nonatomic, weak) id<SHPlayerConfigDelegate> delegate;
 
+/** Adds flags for the video request
+ *
+ *  @param NSString The name of the flag
+ *  @param NSString The value for the flag
+ */
 - (void)addConfigKey:(NSString *)key withValue:(NSString *)value;
 
-
+/** Converts dictionary to JSON and Adds flags to the video request
+ *
+ *  @param NSString The name of the flag
+ *  @param NSDictionary The dictionary for the flag
+ */
 - (void)addConfigKey:(NSString *)key withDictionary:(NSDictionary *)dictionary;
 
 - (NSURL *)videoURL;
