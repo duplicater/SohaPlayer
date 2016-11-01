@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.preserve_paths      = 'SohaPlayer.framework'
   s.public_header_files = 'SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h'
   s.source_files        = 'SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h'
-  s.resource            = 'SohaPlayer.bundle'
+  s.resource_bundle     = 'SohaPlayer.bundle'
   s.vendored_frameworks = 'SohaPlayer.framework'
  # s.dependency 'AFNetworking', '~> 3.0'
 end
