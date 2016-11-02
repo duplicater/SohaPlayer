@@ -10,6 +10,8 @@
 #import "NativeControlsView.h"
 #import <SohaPlayer/SHViewController.h>
 
+#define URL_TEST @"https://devup.sohatv.vn/play/app?v=MzQ=_OTY=_20160718_143705"
+
 @interface NativeComponents () <NativeControlsDelegate, SHViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *playerContainer;
 @property (weak, nonatomic) IBOutlet NativeControlsView *nativeControls;
@@ -17,6 +19,7 @@
 @property (retain, nonatomic) SHViewController *player;
 
 @end
+
 
 @implementation NativeComponents{
     SHPlayerConfig *config;
@@ -44,11 +47,10 @@
 
 - (void)setupPlayer{
     
-    config = [[SHPlayerConfig alloc] initWithSourceUrl:@"http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8" appkey:nil secretKey:nil vid:nil];
-    
-    [self hideHTMLControls];
+    config = [[SHPlayerConfig alloc] initWithShortLinkUrl:URL_TEST appkey:nil secretKey:nil vid:nil];
     
     _player = [[SHViewController alloc] initWithConfiguration:config webRq:NO];
+    
     _player.delegate = self;
     
     //set frame
@@ -78,12 +80,6 @@
     
 }
 
-
-- (void)hideHTMLControls {
-    [config addConfigKey:@"controlBarContainer.plugin" withValue:@"false"];
-    [config addConfigKey:@"topBarContainer.plugin" withValue:@"false"];
-    [config addConfigKey:@"largePlayBtn.plugin" withValue:@"false"];
-}
 
 - (void)play {    
     [self.player.SHPlayer play];

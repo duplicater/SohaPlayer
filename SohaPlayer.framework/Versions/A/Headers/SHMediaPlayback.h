@@ -21,7 +21,10 @@
 // Automatically invoked when -play is called if the player is not already prepared.
 - (void)prepareToPlay;
 
-/*! 
+/*!
+ @method        prepareToPlay:
+ @abstract      Prepares a Kaltura player for playback. (required)
+ 
  If a Kaltura player is not already prepared to play when you call the play method, that method automatically calls this method. However, to minimize playback delay, call this method before you call play.
  */
 @property(nonatomic, readonly) BOOL isPreparedToPlay;

@@ -9,6 +9,8 @@
 #import "NativeComponentsFs.h"
 #import <SohaPlayer/SHViewController.h>
 
+#define URL_TEST @"https://devup.sohatv.vn/play/app?v=MzQ=_OTY=_20160718_143705"
+
 
 @interface NativeComponentsFs ()
 
@@ -32,7 +34,7 @@
     if (!_player) {
         
         // Account Params
-        SHPlayerConfig *config = [[SHPlayerConfig alloc] initWithSourceUrl:@"http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8" appkey:nil secretKey:nil vid:nil];
+        SHPlayerConfig *config = [[SHPlayerConfig alloc] initWithShortLinkUrl:URL_TEST appkey:nil secretKey:nil vid:nil];
 
         
         _player = [[SHViewController alloc] initWithConfiguration:config webRq:NO];

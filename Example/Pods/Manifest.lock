@@ -1,5 +1,21 @@
 PODS:
-  - SohaPlayer (1.0.1)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - SohaPlayer (1.0.2):
+    - AFNetworking
 
 DEPENDENCIES:
   - SohaPlayer (from `../`)
@@ -9,8 +25,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SohaPlayer: f0c96ccb4de07a9a042b72f7d50b4fd35445e10a
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  SohaPlayer: f8b215942f83d84f961d582caebfb907099ef6f0
 
-PODFILE CHECKSUM: 0964d1d7fa366ca0216e53b440e44ed5fd7ffc37
-
-COCOAPODS: 1.0.1
+COCOAPODS: 0.39.0

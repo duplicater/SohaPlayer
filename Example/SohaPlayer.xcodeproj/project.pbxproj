@@ -24,9 +24,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9E16F8F21DC218CA00D5DEB7 /* NativeComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E16F8EF1DC218CA00D5DEB7 /* NativeComponents.m */; };
 		9E16F8F31DC218CA00D5DEB7 /* NativeComponentsFs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E16F8F11DC218CA00D5DEB7 /* NativeComponentsFs.m */; };
-		9E16F8F51DC218D800D5DEB7 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E16F8F41DC218D700D5DEB7 /* AFNetworking.framework */; };
 		9E16F8F61DC218EF00D5DEB7 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E16F8F41DC218D700D5DEB7 /* AFNetworking.framework */; };
-		9E16F8F71DC218EF00D5DEB7 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E16F8F41DC218D700D5DEB7 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9E16F8FD1DC2192F00D5DEB7 /* NativeControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E16F8FB1DC2192F00D5DEB7 /* NativeControlsView.m */; };
 		9E16F8FE1DC2192F00D5DEB7 /* NativeControlsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E16F8FC1DC2192F00D5DEB7 /* NativeControlsView.xib */; };
 		C7A56D0F271BF3791AB3E2F1 /* Pods_SohaPlayer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB73FD065BE62DECAAEF7BD4 /* Pods_SohaPlayer_Tests.framework */; };
@@ -49,7 +47,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9E16F8F71DC218EF00D5DEB7 /* AFNetworking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +83,7 @@
 		9E16F8EF1DC218CA00D5DEB7 /* NativeComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeComponents.m; sourceTree = "<group>"; };
 		9E16F8F01DC218CA00D5DEB7 /* NativeComponentsFs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeComponentsFs.h; sourceTree = "<group>"; };
 		9E16F8F11DC218CA00D5DEB7 /* NativeComponentsFs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeComponentsFs.m; sourceTree = "<group>"; };
-		9E16F8F41DC218D700D5DEB7 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = "<group>"; };
+		9E16F8F41DC218D700D5DEB7 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = /Users/JackyLmao/Desktop/SohaPlayer/Example/AFNetworking.framework; sourceTree = "<absolute>"; };
 		9E16F8FA1DC2192F00D5DEB7 /* NativeControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeControlsView.h; sourceTree = "<group>"; };
 		9E16F8FB1DC2192F00D5DEB7 /* NativeControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeControlsView.m; sourceTree = "<group>"; };
 		9E16F8FC1DC2192F00D5DEB7 /* NativeControlsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeControlsView.xib; sourceTree = "<group>"; };
@@ -103,7 +100,6 @@
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				9E16F8F61DC218EF00D5DEB7 /* AFNetworking.framework in Frameworks */,
-				9E16F8F51DC218D800D5DEB7 /* AFNetworking.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				7D14EC66C63FBD50BFC375E7 /* Pods_SohaPlayer_Example.framework in Frameworks */,
@@ -127,7 +123,6 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				9E16F8F41DC218D700D5DEB7 /* AFNetworking.framework */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for SohaPlayer */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -255,6 +250,7 @@
 				B37D8EE09C45739C53A0D4A8 /* [CP] Embed Pods Frameworks */,
 				9FC8C41D8A694A71C8D68CAC /* [CP] Copy Pods Resources */,
 				9E16F8F81DC218EF00D5DEB7 /* Embed Frameworks */,
+				EA289889BB7BF73A7E090EC0 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -436,6 +432,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SohaPlayer_Tests/Pods-SohaPlayer_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EA289889BB7BF73A7E090EC0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SohaPlayer_Example/Pods-SohaPlayer_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -570,6 +581,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 76X7GRK948;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -580,7 +592,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vcc.demo.SohaPlayer-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -593,6 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 76X7GRK948;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -603,7 +616,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vcc.demo.SohaPlayer-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -1,55 +1,13 @@
-#import "NSDictionary+Cache.h"
-#import "NSMutableDictionary+Cache.h"
-#import "SHCacheManager.h"
-#import "CastProviderInternalDelegate.h"
-#import "KCastDevice.h"
-#import "KCastMediaRemoteControl.h"
-#import "KCastProvider.h"
-#import "KChromecastPlayer.h"
-#import "KChromeCastWrapper.h"
-#import "NSDictionary+Utilities.h"
-#import "NSMutableDictionary+AdSupport.h"
-#import "NSString+Utilities.h"
-#import "ChromecastDeviceController.h"
-#import "DeviceParamsHandler.h"
+//
+//  SohaPlayer.h
+//  SohaPlayer
+//
+//  Created by Le Cuong on 10/27/16.
+//  Copyright © 2016 Le Cuong. All rights reserved.
+//
 
-#import "NSBundle+Soha.h"
-#import "NSMutableArray+QueryItems.h"
-#import "NSMutableArray+QueueAdditions.h"
-#import "Secure.h"
-#import "EmailStrategy.h"
-#import "FacebookStrategy.h"
-#import "GoogleplusStrategy.h"
-#import "linkedinStrategy.h"
-#import "NSDictionary+Strategy.h"
-#import "SmsStrategy.h"
-#import "TwitterStrategy.h"
-#import "SHBrowserViewController.h"
-#import "SHWebKitBrowserViewController.h"
-#import "SHShareManager.h"
-#import "SHControlsUIWebView.h"
-#import "SHControlsView.h"
-#import "SHControlsWKWebView.h"
-#import "VKScrubber.h"
-#import "VKSlider.h"
-#import "SHCPlayer.h"
-#import "SHLog.h"
-#import "SHLogManager.h"
-#import "SHMediaPlayback.h"
-#import "IMAHandler.h"
-#import "SHAssetBuilder.h"
-#import "SHAssetHandler.h"
-#import "SHController.h"
-#import "SHController_Private.h"
-#import "SHFairPlayHandler.h"
-#import "SHIMAPlayerViewController.h"
-#import "SHMediaPlayerDefines.h"
-#import "SHPlayer.h"
-#import "SHPlayerFactory.h"
-#import "SHURLProtocol.h"
-#import "ControlsPlayer.h"
-#import "SHPlayerConfig.h"
-#import "SHPlayerConfig_Private.h"
-#import "SHViewController.h"
-#import "SHViewControllerProtocols.h"
-#import "Utilities.h"
+#import <Foundation/Foundation.h>
+
+@interface SohaPlayer : NSObject
+
+@end

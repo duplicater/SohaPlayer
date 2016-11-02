@@ -170,5 +170,7 @@ typedef NS_ENUM(NSInteger, KDPAPIState) {
 
 @property (nonatomic) BOOL showControls;
 
+@property (nonatomic) BOOL autoPlay;
+
 @end
 

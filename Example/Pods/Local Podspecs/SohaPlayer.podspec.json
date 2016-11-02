@@ -1,10 +1,9 @@
 {
   "name": "SohaPlayer",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "summary": "The SohaPlayerSDK iOS SDK, play video into your iOS application.",
   "license": {
     "type": "MIT",
-    "file": "LICENSE"
   },
   "authors": {
     "Jackylmao": "cuongleviet@vccorp.vn"
@@ -35,14 +34,19 @@
   ],
   "requires_arc": true,
   "source": {
-    "http": "https://github.com/duplicater/SohaPlayer/releases/download/1.0.1/SohaPlayer.framework.zip"
+    "http": "https://github.com/duplicater/SohaPlayer/releases/download/1.0.4/Archive.zip"
   },
   "platforms": {
     "ios": "8.0"
   },
   "preserve_paths": "SohaPlayer.framework",
-  "public_header_files": "SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h",
-  "source_files": "SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h",
-  "resources": "SohaPlayer.bundle",
-  "vendored_frameworks": "SohaPlayer.framework"
+  "public_header_files": "SohaPlayer.framework/Versions/A/Headers/*",
+  "source_files": "SohaPlayer.framework/Versions/A/Headers/*",
+  "resources": "SohaPlayer.framework/Versions/A/Resources/SohaPlayer.bundle",
+  "vendored_frameworks": "SohaPlayer.framework",
+  "dependencies": {
+    "AFNetworking": [
+
+    ]
+  }
 }
