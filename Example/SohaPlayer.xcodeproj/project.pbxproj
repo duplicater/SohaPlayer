@@ -24,10 +24,10 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9E16F8F21DC218CA00D5DEB7 /* NativeComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E16F8EF1DC218CA00D5DEB7 /* NativeComponents.m */; };
 		9E16F8F31DC218CA00D5DEB7 /* NativeComponentsFs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E16F8F11DC218CA00D5DEB7 /* NativeComponentsFs.m */; };
-		9E16F8F61DC218EF00D5DEB7 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E16F8F41DC218D700D5DEB7 /* AFNetworking.framework */; };
 		9E16F8FD1DC2192F00D5DEB7 /* NativeControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E16F8FB1DC2192F00D5DEB7 /* NativeControlsView.m */; };
 		9E16F8FE1DC2192F00D5DEB7 /* NativeControlsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E16F8FC1DC2192F00D5DEB7 /* NativeControlsView.xib */; };
-		C7A56D0F271BF3791AB3E2F1 /* Pods_SohaPlayer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB73FD065BE62DECAAEF7BD4 /* Pods_SohaPlayer_Tests.framework */; };
+		9E7798C01DD572620083941A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7798BE1DD572620083941A /* AVFoundation.framework */; };
+		9E7798C11DD572620083941A /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7798BF1DD572620083941A /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +75,6 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		634EC327F5B4AA445B6921BB /* Pods-SohaPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SohaPlayer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SohaPlayer_Tests/Pods-SohaPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6CDB9FF505F61A0686E69BF4 /* SohaPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SohaPlayer.podspec; path = ../SohaPlayer.podspec; sourceTree = "<group>"; };
 		718FB896B78E1E8096CF509B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -83,11 +82,11 @@
 		9E16F8EF1DC218CA00D5DEB7 /* NativeComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeComponents.m; sourceTree = "<group>"; };
 		9E16F8F01DC218CA00D5DEB7 /* NativeComponentsFs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeComponentsFs.h; sourceTree = "<group>"; };
 		9E16F8F11DC218CA00D5DEB7 /* NativeComponentsFs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeComponentsFs.m; sourceTree = "<group>"; };
-		9E16F8F41DC218D700D5DEB7 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = /Users/JackyLmao/Desktop/SohaPlayer/Example/AFNetworking.framework; sourceTree = "<absolute>"; };
 		9E16F8FA1DC2192F00D5DEB7 /* NativeControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeControlsView.h; sourceTree = "<group>"; };
 		9E16F8FB1DC2192F00D5DEB7 /* NativeControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeControlsView.m; sourceTree = "<group>"; };
 		9E16F8FC1DC2192F00D5DEB7 /* NativeControlsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeControlsView.xib; sourceTree = "<group>"; };
-		A315957EA362C180A4E19E72 /* Pods-SohaPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SohaPlayer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SohaPlayer_Tests/Pods-SohaPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E7798BE1DD572620083941A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9E7798BF1DD572620083941A /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		AB73FD065BE62DECAAEF7BD4 /* Pods_SohaPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SohaPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05B031212B1362AB4E8F262 /* Pods-SohaPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SohaPlayer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SohaPlayer_Example/Pods-SohaPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB3848100F0A57C48025C87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -98,8 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E7798C01DD572620083941A /* AVFoundation.framework in Frameworks */,
+				9E7798C11DD572620083941A /* AVKit.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
-				9E16F8F61DC218EF00D5DEB7 /* AFNetworking.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				7D14EC66C63FBD50BFC375E7 /* Pods_SohaPlayer_Example.framework in Frameworks */,
@@ -113,7 +113,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				C7A56D0F271BF3791AB3E2F1 /* Pods_SohaPlayer_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +143,8 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E7798BE1DD572620083941A /* AVFoundation.framework */,
+				9E7798BF1DD572620083941A /* AVKit.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -230,8 +231,6 @@
 			children = (
 				C05B031212B1362AB4E8F262 /* Pods-SohaPlayer_Example.debug.xcconfig */,
 				071B33FCF52AB54B7B105ED6 /* Pods-SohaPlayer_Example.release.xcconfig */,
-				A315957EA362C180A4E19E72 /* Pods-SohaPlayer_Tests.debug.xcconfig */,
-				634EC327F5B4AA445B6921BB /* Pods-SohaPlayer_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -265,12 +264,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "SohaPlayer_Tests" */;
 			buildPhases = (
-				98A14E6921B71AD73064D11C /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				E8A0F0EF3798D6944E850E15 /* [CP] Embed Pods Frameworks */,
-				06A9138CDC480077459872C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,21 +338,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06A9138CDC480077459872C3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SohaPlayer_Tests/Pods-SohaPlayer_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		60D56B981D2E6E173867C89F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,22 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		98A14E6921B71AD73064D11C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9FC8C41D8A694A71C8D68CAC /* [CP] Copy Pods Resources */ = {
@@ -415,21 +381,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SohaPlayer_Example/Pods-SohaPlayer_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E8A0F0EF3798D6944E850E15 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SohaPlayer_Tests/Pods-SohaPlayer_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EA289889BB7BF73A7E090EC0 /* Embed Pods Frameworks */ = {
@@ -624,7 +575,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A315957EA362C180A4E19E72 /* Pods-SohaPlayer_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -648,7 +598,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 634EC327F5B4AA445B6921BB /* Pods-SohaPlayer_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

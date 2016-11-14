@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = 'SohaPlayer'
-  s.version             = '1.0.4'
+  s.version             = '1.0.5'
   s.summary             = 'The SohaPlayerSDK iOS SDK, play video into your iOS application.'
   s.license          = 'MIT'
   s.author           = { 'Jackylmao' => 'cuongleviet@vccorp.vn' }
@@ -16,5 +16,4 @@ Pod::Spec.new do |s|
   s.source_files        = 'SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h'
   s.resource           = 'SohaPlayer.framework/Versions/A/Resources/SohaPlayer.bundle'
   s.vendored_frameworks = 'SohaPlayer.framework'
-  s.dependency 'AFNetworking'
 end

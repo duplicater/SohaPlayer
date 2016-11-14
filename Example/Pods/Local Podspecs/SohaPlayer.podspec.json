@@ -1,14 +1,12 @@
 {
   "name": "SohaPlayer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "summary": "The SohaPlayerSDK iOS SDK, play video into your iOS application.",
-  "license": {
-    "type": "MIT"
-  },
+  "license": "MIT",
   "authors": {
     "Jackylmao": "cuongleviet@vccorp.vn"
   },
-  "homepage": "http => \"https://github.com/duplicater/SohaPlayer",
+  "homepage": "https://devuser.sohatv.vn",
   "description": "The SohaPlayerSDK iOS SDK, for  play video into your iOS application. The SDK supports iOS7, iOS 8, iOS 9 and iOS 10",
   "frameworks": [
     "SystemConfiguration",
@@ -34,19 +32,14 @@
   ],
   "requires_arc": true,
   "source": {
-    "http": "https://github.com/duplicater/SohaPlayer/releases/download/1.0.4/Archive.zip"
+    "http": "https://github.com/duplicater/SohaPlayer/releases/download/1.0.5/Archive.zip"
   },
   "platforms": {
     "ios": "8.0"
   },
   "preserve_paths": "SohaPlayer.framework",
-  "public_header_files": "SohaPlayer.framework/Versions/A/Headers/*",
-  "source_files": "SohaPlayer.framework/Versions/A/Headers/*",
+  "public_header_files": "SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h",
+  "source_files": "SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h",
   "resources": "SohaPlayer.framework/Versions/A/Resources/SohaPlayer.bundle",
-  "vendored_frameworks": "SohaPlayer.framework",
-  "dependencies": {
-    "AFNetworking": [
-
-    ]
-  }
+  "vendored_frameworks": "SohaPlayer.framework"
 }
