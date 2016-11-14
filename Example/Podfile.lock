@@ -1,5 +1,5 @@
 PODS:
-  - SohaPlayer (1.0.5)
+  - SohaPlayer (1.0.6)
 
 DEPENDENCIES:
   - SohaPlayer (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SohaPlayer: f9c06fc3ae25d674883d9a6abb5e4f10b9073008
+  SohaPlayer: e913601daf2a5ff9f1e87eb505d7cc385745042a
 
 PODFILE CHECKSUM: 90e93a86fceaa46b3172d0f00ed49247c73b0126
 
