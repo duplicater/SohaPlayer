@@ -18,16 +18,17 @@
 		25271291A020188CAAAD28427DF19347 /* Pods-SohaPlayer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SohaPlayer_Example-frameworks.sh"; sourceTree = "<group>"; };
 		36A1E99A14D2C204B1041B6538042AB3 /* Pods-SohaPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SohaPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6161BCA36CC6D4F9A7ACFEB126501DF4 /* Pods_SohaPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SohaPlayer_Example.framework; path = "Pods-SohaPlayer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC227A121465B28F1D5ED3E38D1A9E7 /* SohaPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SohaPlayer.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A68C9BED57E6597FAF3745A1E1A5A5EF /* SohaPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SohaPlayer.h; sourceTree = "<group>"; };
 		AF41529455C83F1EE41B1520B28FEBFD /* Pods-SohaPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SohaPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CABB50C62D21C867049023CECF0455D6 /* Pods-SohaPlayer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SohaPlayer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CBA3C3071F8D9EDF6F3D91E9DE4FEFF8 /* SohaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SohaPlayer.framework; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D8F993F47EE8C53B312EB0857C7EECE2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB3C8BF9ED6D8378FD7D3238CE603EB /* Pods-SohaPlayer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SohaPlayer_Example-resources.sh"; sourceTree = "<group>"; };
 		DE6B896B6C241E10FA25AEE836A737F9 /* Pods-SohaPlayer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SohaPlayer_Example-umbrella.h"; sourceTree = "<group>"; };
 		F513F03609661FE2FAC6E88B21C17858 /* Pods-SohaPlayer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SohaPlayer_Example-dummy.m"; sourceTree = "<group>"; };
+		F5FDCA07F1812ED477585ED3906BBEB2 /* SohaPlayer.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = SohaPlayer.bundle; sourceTree = "<group>"; };
+		FABEF45E91D8B78757AA084C0392DBE4 /* SohaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SohaPlayer.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,29 +43,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AD4C256560C64A4A5E04FAC6D696AF5 /* Frameworks */ = {
+		409B13A3D37A1FD22118FA12D09E0092 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CBA3C3071F8D9EDF6F3D91E9DE4FEFF8 /* SohaPlayer.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3BF914A4B031BFD8471DF70FCFFDA11A /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7AA1BDC363CE8F1E11BE9494FBDEBBA9 /* SohaPlayer */,
+				762FF92E7481E87CD860D71F420DB7FA /* SohaPlayer */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		3F773AED5297396263EA73BE54558917 /* A */ = {
-			isa = PBXGroup;
-			children = (
-				5F12E45296018E22ED8F2F00753C8F35 /* Headers */,
-			);
-			name = A;
-			path = A;
 			sourceTree = "<group>";
 		};
 		4A02290115C85FF690ED20F668986E28 /* Targets Support Files */ = {
@@ -75,24 +59,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5F12E45296018E22ED8F2F00753C8F35 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				A68C9BED57E6597FAF3745A1E1A5A5EF /* SohaPlayer.h */,
-			);
-			name = Headers;
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		6E1083133AA0E945C62C44E283CA4788 /* SohaPlayer.framework */ = {
-			isa = PBXGroup;
-			children = (
-				77E3550A152A117A6A23B6E9B586B075 /* Versions */,
-			);
-			name = SohaPlayer.framework;
-			path = SohaPlayer.framework;
-			sourceTree = "<group>";
-		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,30 +67,30 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		77E3550A152A117A6A23B6E9B586B075 /* Versions */ = {
+		762FF92E7481E87CD860D71F420DB7FA /* SohaPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				3F773AED5297396263EA73BE54558917 /* A */,
-			);
-			name = Versions;
-			path = Versions;
-			sourceTree = "<group>";
-		};
-		7AA1BDC363CE8F1E11BE9494FBDEBBA9 /* SohaPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				1AD4C256560C64A4A5E04FAC6D696AF5 /* Frameworks */,
-				6E1083133AA0E945C62C44E283CA4788 /* SohaPlayer.framework */,
+				C522672C61BCC64DC666FE584908595B /* Frameworks */,
+				7920E04ED27CEDA2A162A70322342C7A /* Resources */,
+				AFA3C617DA688D5E3127FC5155863F22 /* SohaPlayer.framework */,
 			);
 			name = SohaPlayer;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		7920E04ED27CEDA2A162A70322342C7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5FDCA07F1812ED477585ED3906BBEB2 /* SohaPlayer.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				3BF914A4B031BFD8471DF70FCFFDA11A /* Development Pods */,
+				409B13A3D37A1FD22118FA12D09E0092 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				8323261E99E6EC81B9125D6D4B4ED751 /* Products */,
 				4A02290115C85FF690ED20F668986E28 /* Targets Support Files */,
@@ -137,6 +103,15 @@
 				6161BCA36CC6D4F9A7ACFEB126501DF4 /* Pods_SohaPlayer_Example.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		85F641366FDC8F6E0EBBA912FC66A6B9 /* A */ = {
+			isa = PBXGroup;
+			children = (
+				CB8B89F268B400B6D117A2C2313722DF /* Headers */,
+			);
+			name = A;
+			path = A;
 			sourceTree = "<group>";
 		};
 		8FA135C1234BC2FB03D846CAB8A5558A /* Pods-SohaPlayer_Example */ = {
@@ -157,12 +132,47 @@
 			path = "Target Support Files/Pods-SohaPlayer_Example";
 			sourceTree = "<group>";
 		};
+		AFA3C617DA688D5E3127FC5155863F22 /* SohaPlayer.framework */ = {
+			isa = PBXGroup;
+			children = (
+				E084FD617A6DE0C7C64DF0E59A7C9542 /* Versions */,
+			);
+			name = SohaPlayer.framework;
+			path = SohaPlayer.framework;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C522672C61BCC64DC666FE584908595B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FABEF45E91D8B78757AA084C0392DBE4 /* SohaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB8B89F268B400B6D117A2C2313722DF /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8FC227A121465B28F1D5ED3E38D1A9E7 /* SohaPlayer.h */,
+			);
+			name = Headers;
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		E084FD617A6DE0C7C64DF0E59A7C9542 /* Versions */ = {
+			isa = PBXGroup;
+			children = (
+				85F641366FDC8F6E0EBBA912FC66A6B9 /* A */,
+			);
+			name = Versions;
+			path = Versions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

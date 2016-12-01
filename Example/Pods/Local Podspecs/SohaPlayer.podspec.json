@@ -40,6 +40,6 @@
   "preserve_paths": "SohaPlayer.framework",
   "public_header_files": "SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h",
   "source_files": "SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h",
-  "resources": "SohaPlayer.framework/Versions/A/Resources/SohaPlayer.bundle",
+  "resources": "SohaPlayer.bundle",
   "vendored_frameworks": "SohaPlayer.framework"
 }

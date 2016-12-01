@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.preserve_paths      = 'SohaPlayer.framework'
   s.public_header_files = 'SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h'
   s.source_files        = 'SohaPlayer.framework/Versions/A/Headers/SohaPlayer.h'
-  s.resource           = 'SohaPlayer.framework/Versions/A/Resources/SohaPlayer.bundle'
+  s.resource           = 'SohaPlayer.bundle'
   s.vendored_frameworks = 'SohaPlayer.framework'
 end
 
