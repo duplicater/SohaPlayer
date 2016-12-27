@@ -63,6 +63,8 @@ typedef enum{
 - (void)pause;
 - (void)removePlayer;
 
+- (void)setlayerGravity:(NSString*)gravity;
+
 @optional
 
 - (void)enableTracks:(BOOL)isEnablingTracks;

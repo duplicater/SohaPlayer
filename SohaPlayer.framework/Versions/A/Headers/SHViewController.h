@@ -76,7 +76,6 @@
 @property (nonatomic, strong) SHPlayerConfig *currentConfiguration;
 
 
-// Kaltura Player External API
 
 /// Change the source and returns the current source
 @property (nonatomic, copy) NSURL *playerSource;
@@ -88,8 +87,7 @@
 - (void)setShareHandler:(void(^)(NSDictionary *shareParams))shareHandler;
 
 
-#pragma mark -
-#pragma Kaltura Player External API - KDP API
+#pragma mark - KDPAPIState
 // -----------------------------------------------------------------------------
 // KDP API Types
 

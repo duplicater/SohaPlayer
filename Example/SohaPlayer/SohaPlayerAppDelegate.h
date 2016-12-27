@@ -7,9 +7,18 @@
 //
 
 @import UIKit;
+#import <MdcLib/MdcLib.h>
+#import "PushHandler.h"
 
 @interface SohaPlayerAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) MdcLib *mdcLib;
+
+@property (strong, nonatomic, retain) NSDate *startTime;
+
+@property (nonatomic) UIBackgroundTaskIdentifier bgTask;
+
 
 @end

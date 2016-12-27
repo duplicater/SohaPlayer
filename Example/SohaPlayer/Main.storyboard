@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="b4b-u3-NdQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="b4b-u3-NdQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aeV-2R-F9a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hdl-dA-wS2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -34,18 +37,20 @@
                         <viewControllerLayoutGuide type="bottom" id="THW-sv-7VG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OcZ-04-fT4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mza-xF-WNm" userLabel="Player Container">
+                                <rect key="frame" x="0.0" y="183.5" width="375" height="300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPV-jW-pHY" customClass="NativeControlsView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.69428168402777779" green="0.37556966145833331" blue="0.77067057291666663" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="2Ii-4H-eKE"/>
+                                    <constraint firstAttribute="height" constant="300" id="2Ii-4H-eKE"/>
                                     <constraint firstItem="WPV-jW-pHY" firstAttribute="leading" secondItem="Mza-xF-WNm" secondAttribute="leading" id="BR0-qw-lL7"/>
                                     <constraint firstItem="WPV-jW-pHY" firstAttribute="top" secondItem="Mza-xF-WNm" secondAttribute="top" id="Jm4-se-kWD"/>
                                     <constraint firstAttribute="trailing" secondItem="WPV-jW-pHY" secondAttribute="trailing" id="SWn-10-Wtx"/>

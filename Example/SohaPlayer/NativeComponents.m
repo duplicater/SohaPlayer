@@ -9,12 +9,14 @@
 #import "NativeComponents.h"
 #import "NativeControlsView.h"
 #import <SohaPlayer/SHViewController.h>
+#import <MdcLib/MdcLib.h>
+#import "NSCacheManager.h"
 
 #import <AVFoundation/AVFoundation.h>
 
 //#define URL_TEST @"http://hls.vcmedia.vn/kenh14/bzr5ienedy-xge47jt5qgx8sd3mcsu/2016/11/10/cauhon-bongda-1478773085927-eda5d.mp4"
 #define URL_TEST @"http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8"
-#define URL_TEST2 @"http://hls.vcmedia.vn/premierleague/video/20161107224108/100281921_1200_96.mp4"
+#define URL_TEST2 @"http://play.sohatv.vn/?v=Z2Vuaw=="
 
 @interface NativeComponents () <NativeControlsDelegate, SHViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *playerContainer;
@@ -39,7 +41,9 @@
     // Do any additional setup after loading the view.
     _nativeControls.delegate = self;
     
+    MdcLib *mdclib = [MdcLib sharedInstance];
     
+    [mdclib registerUser:@"cuonglv2@gmail.com" userId:@"cuonglv2"];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -55,7 +59,7 @@
 
 - (void)setupPlayer{
     
-    config = [[SHPlayerConfig alloc] initWithSourceUrl:URL_TEST2 appkey:nil secretKey:nil vid:nil];
+    config = [[SHPlayerConfig alloc] initWithSourceUrl:URL_TEST appkey:nil secretKey:nil vid:nil];
     
     _player = [[SHViewController alloc] initWithConfiguration:config webRq:NO];
     
@@ -67,10 +71,11 @@
     
     [self.playerContainer insertSubview:_player.view atIndex:0];
     
+    [self.player.SHPlayer setlayerGravity:AVLayerVideoGravityResize];
 }
 
 - (void)updateCurrentPlaybackTime:(double)currentPlaybackTime{
-    NSLog(@"updateCurrentPlaybackTime: %f",currentPlaybackTime);
+//    NSLog(@"updateCurrentPlaybackTime: %f",currentPlaybackTime);
     
     [_nativeControls.progressSlider setValue:currentPlaybackTime];
 }
@@ -94,8 +99,9 @@
 }
 
 
-- (void)play {    
+- (void)play {
     [self.player.SHPlayer play];
+    
 }
 
 - (void)pause {

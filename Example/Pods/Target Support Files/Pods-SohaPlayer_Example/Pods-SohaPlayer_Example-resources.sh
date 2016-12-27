@@ -74,9 +74,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "MdcLib/MdcLib.bundle"
   install_resource "../../SohaPlayer.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "MdcLib/MdcLib.bundle"
   install_resource "../../SohaPlayer.bundle"
 fi
 
