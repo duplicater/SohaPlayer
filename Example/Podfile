@@ -2,5 +2,4 @@ use_frameworks!
 
 target 'SohaPlayer_Example' do
   pod 'SohaPlayer', :path => '../'
-  pod 'MdcLib'
 end

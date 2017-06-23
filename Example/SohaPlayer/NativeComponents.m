@@ -9,14 +9,15 @@
 #import "NativeComponents.h"
 #import "NativeControlsView.h"
 #import <SohaPlayer/SHViewController.h>
-#import <MdcLib/MdcLib.h>
 #import "NSCacheManager.h"
 
 #import <AVFoundation/AVFoundation.h>
 
-//#define URL_TEST @"http://hls.vcmedia.vn/kenh14/bzr5ienedy-xge47jt5qgx8sd3mcsu/2016/11/10/cauhon-bongda-1478773085927-eda5d.mp4"
-#define URL_TEST @"http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8"
+#define URL_TESTxx @"https://hls.mediacdn.vn/kinglive/c6550ad6f7fcf8ae27a25e265a99b2de-21-Jun-17-10:24:34.flv/mobile.m3u8"
+#define URL_TEST @"http://nb7.mediacdn.vn/dev93/0/035/604/0035604651.mp4?name=premierleague/video/20170522105224/100354649_1200_96_1080p.mp4"
 #define URL_TEST2 @"http://play.sohatv.vn/?v=Z2Vuaw=="
+#define URL_TEST3 @"http://www.mediacollege.com/video-gallery/testclips/barsandtone.flv"
+
 
 @interface NativeComponents () <NativeControlsDelegate, SHViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *playerContainer;
@@ -40,10 +41,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _nativeControls.delegate = self;
-    
-    MdcLib *mdclib = [MdcLib sharedInstance];
-    
-    [mdclib registerUser:@"cuonglv2@gmail.com" userId:@"cuonglv2"];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -58,8 +55,8 @@
 }
 
 - (void)setupPlayer{
-    
-    config = [[SHPlayerConfig alloc] initWithSourceUrl:URL_TEST appkey:nil secretKey:nil vid:nil];
+//    config = [[SHPlayerConfig alloc] initWithShortLinkUrl:URL_TESTxx appkey:nil secretKey:nil vid:nil];
+    config = [[SHPlayerConfig alloc] initWithSourceUrl:URL_TESTxx appkey:nil secretKey:nil vid:nil];
     
     _player = [[SHViewController alloc] initWithConfiguration:config webRq:NO];
     
@@ -101,7 +98,11 @@
 
 - (void)play {
     [self.player.SHPlayer play];
-    
+    [config getCurrentTimeVideoWithSuccess:^(float time, NSString * _Nullable error) {
+        //
+        NSLog(@"time get %f",time);
+        NSLog(@"error get time %@",error);
+    }];
 }
 
 - (void)pause {

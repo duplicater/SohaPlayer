@@ -18,6 +18,12 @@ case "${TARGETED_DEVICE_FAMILY}" in
   2)
     TARGET_DEVICE_ARGS="--target-device ipad"
     ;;
+  3)
+    TARGET_DEVICE_ARGS="--target-device tv"
+    ;;
+  4)
+    TARGET_DEVICE_ARGS="--target-device watch"
+    ;;
   *)
     TARGET_DEVICE_ARGS="--target-device mac"
     ;;
@@ -74,11 +80,9 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "MdcLib/MdcLib.bundle"
   install_resource "../../SohaPlayer.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "MdcLib/MdcLib.bundle"
   install_resource "../../SohaPlayer.bundle"
 fi
 

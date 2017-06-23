@@ -14,6 +14,8 @@ static NSString *SHPlayerConfigNativeCallOutKey = @"nativeCallout";
 static NSString *SHPlayerConfigChromecastKey = @"chromecast.plugin";
 static NSString *SHPlayerConfigNativeAdIdKey = @"nativeAdId";
 
+typedef void (^timeVideoLiveResponse)(float time, NSString *_Nullable error);
+
 @protocol SHPlayerConfigDelegate <NSObject>
 
 @required
@@ -99,5 +101,7 @@ DEPRECATED_MSG_ATTRIBUTE("Use initWithServer:uiConfID:partnerId:");
 - (NSURL *)appendConfiguration:(NSURL *)videoURL;
 
 -(NSMutableArray<NSURLQueryItem*>*)queryItems;
+
+- (void)getCurrentTimeVideoWithSuccess:(timeVideoLiveResponse)response;
 
 @end
