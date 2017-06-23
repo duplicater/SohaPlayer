@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = 'SohaPlayer'
-  s.version             = '1.1.0'
+  s.version             = '1.1.1'
   s.summary             = 'The SohaPlayerSDK iOS SDK, play video into your iOS application.'
   s.license          = 'MIT'
 
